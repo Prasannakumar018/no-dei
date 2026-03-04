@@ -4,8 +4,41 @@
   <meta name="google-site-verification" content="kjpLjKRBLeTNG5CjYoHJNLbaa81krQ_MkFGBYHJ7frs" />
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>No Dei</title>
-  <meta name="description" content="Don't just text 'Dei' and wait. Respect people's time. Ask your question directly."/>
+
+  <!-- Primary SEO -->
+  <title>No Dei — Don't just text "Dei" and wait. Ask your question.</title>
+  <meta name="description" content="No Dei: A message to Tamil texters. Don't just send 'Dei' and wait. Respect your friend's time — ask your question directly. Inspired by nohello.net."/>
+  <meta name="keywords" content="no dei, nodei, Tamil texting etiquette, nohello tamil, dei meaning, don't say dei, Tamil slang, texting tips, async communication"/>
+  <meta name="author" content="BHATHIKAPATTA NANBAR"/>
+  <link rel="canonical" href="https://no-dei.vercel.app/"/>
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn previews) -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://no-dei.vercel.app/"/>
+  <meta property="og:title" content="No Dei — Don't just text 'Dei' and wait"/>
+  <meta property="og:description" content="You know who you are. Stop texting just 'Dei' and making people wait. Ask your question directly. A message to Tamil texters everywhere."/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="No Dei — Don't just text 'Dei' and wait"/>
+  <meta name="twitter:description" content="Stop texting just 'Dei' and making people wait. Ask your question directly. A message to Tamil texters."/>
+
+  <!-- Structured Data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "No Dei",
+    "url": "https://no-dei.vercel.app/",
+    "description": "A message to Tamil texters: Don't just send 'Dei' and wait. Respect people's time and ask your question directly.",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "name": "BHATHIKAPATTA NANBAR"
+    }
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+Tamil:wght@700;900&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,18 +62,6 @@
       overflow-x: hidden;
     }
 
-    /* TOP BANNER */
-    .top-bar {
-      background: var(--ink);
-      color: var(--bg);
-      text-align: center;
-      padding: 0.5rem 1rem;
-      font-family: 'Space Mono', monospace;
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-    }
-
-    /* NAV */
     nav {
       display: flex;
       align-items: center;
@@ -71,7 +92,6 @@
     }
     .nav-link:hover { background: var(--ink); color: var(--bg); }
 
-    /* HERO */
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -148,7 +168,6 @@
       color: var(--muted);
       max-width: 420px;
     }
-
     .hero-subtitle strong { color: var(--ink); }
 
     .hero-cta {
@@ -192,14 +211,12 @@
     }
     .btn-ghost:hover { transform: translate(-3px, -3px); box-shadow: 3px 3px 0 var(--red); }
 
-    /* HERO RIGHT — chat demo */
     .hero-right {
       padding: 4rem 3rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       background: #faf7f2;
-      position: relative;
     }
 
     .chat-label {
@@ -238,12 +255,7 @@
 
     .chat-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
 
-    .msg {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-      max-width: 80%;
-    }
+    .msg { display: flex; flex-direction: column; gap: 0.25rem; max-width: 80%; }
     .msg.them { align-self: flex-start; }
     .msg.you  { align-self: flex-end; }
 
@@ -262,10 +274,8 @@
       line-height: 1.5;
       border: 1.5px solid var(--border);
     }
-
     .msg.them .bubble { background: #f5f0e8; border-radius: 4px 12px 12px 12px; }
     .msg.you  .bubble { background: var(--ink); color: var(--bg); border-color: var(--ink); border-radius: 12px 4px 12px 12px; }
-
     .bad-chat .msg.them .bubble { border-color: #ffb3b0; background: #fff5f5; }
 
     .vs-divider {
@@ -277,30 +287,6 @@
       color: var(--muted);
     }
 
-    .waiting-indicator {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-family: 'Space Mono', monospace;
-      font-size: 0.7rem;
-      color: var(--muted);
-      margin-top: 0.25rem;
-    }
-    .dot-anim { display: flex; gap: 3px; }
-    .dot-anim span {
-      width: 5px; height: 5px;
-      background: var(--muted);
-      border-radius: 50%;
-      animation: dotBounce 1.2s ease-in-out infinite;
-    }
-    .dot-anim span:nth-child(2) { animation-delay: 0.2s; }
-    .dot-anim span:nth-child(3) { animation-delay: 0.4s; }
-    @keyframes dotBounce {
-      0%,60%,100% { transform: translateY(0); }
-      30% { transform: translateY(-5px); }
-    }
-
-    /* RULE SECTION */
     .rule-section {
       padding: 5rem 3rem;
       border-bottom: 2px solid var(--ink);
@@ -326,14 +312,12 @@
       line-height: 1.1;
       letter-spacing: -0.02em;
     }
-
     .section-title em {
       font-style: normal;
       color: var(--red);
       border-bottom: 3px solid var(--yellow);
     }
 
-    /* THE RULE CARD */
     .rule-card {
       background: var(--ink);
       color: var(--bg);
@@ -343,7 +327,6 @@
       overflow: hidden;
       max-width: 780px;
     }
-
     .rule-card::before {
       content: '✕';
       position: absolute;
@@ -354,21 +337,18 @@
       opacity: 0.07;
       line-height: 1;
     }
-
     .rule-card h3 {
       font-size: 1.6rem;
       font-weight: 800;
       margin-bottom: 1rem;
       color: var(--yellow);
     }
-
     .rule-card p {
       font-size: 1.05rem;
       line-height: 1.8;
       opacity: 0.85;
       max-width: 600px;
     }
-
     .rule-card p + p { margin-top: 1rem; }
 
     .highlight-inline {
@@ -384,7 +364,6 @@
       text-decoration-thickness: 3px;
     }
 
-    /* COMPARISON GRID */
     .compare-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -392,12 +371,7 @@
       margin-top: 3rem;
     }
 
-    .compare-card {
-      border: 2px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
+    .compare-card { border: 2px solid var(--border); border-radius: 12px; overflow: hidden; }
     .compare-card.bad  { border-color: #ffb3b0; }
     .compare-card.good { border-color: #a8e6c0; }
 
@@ -431,22 +405,17 @@
       border: 1.5px solid var(--border);
       max-width: 85%;
     }
-
     .cmsg.left  { align-self: flex-start; background: #f5f0e8; }
     .cmsg.right { align-self: flex-end; background: var(--ink); color: #fff; border-color: var(--ink); }
     .cmsg.wait  { align-self: flex-start; background: #fff5f5; border-color: #ffb3b0; font-style: italic; font-size: 0.8rem; color: var(--muted); }
     .cmsg.time  { align-self: center; font-size: 0.75rem; color: var(--muted); border: none; background: none; font-family: 'Space Mono', monospace; letter-spacing: 0.1em; }
 
-    .cmsg .tamil { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 700; }
-
-    /* WHY SECTION */
     .why-section {
       padding: 5rem 3rem;
       border-bottom: 2px solid var(--ink);
       background: var(--ink);
       color: var(--bg);
     }
-
     .why-section .section-num { color: rgba(245,240,232,0.4); }
     .why-section .section-title { color: var(--bg); }
 
@@ -476,24 +445,10 @@
       margin-bottom: 1rem;
       line-height: 1;
     }
+    .why-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .why-text { font-size: 0.9rem; line-height: 1.75; opacity: 0.65; }
 
-    .why-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-    }
-
-    .why-text {
-      font-size: 0.9rem;
-      line-height: 1.75;
-      opacity: 0.65;
-    }
-
-    /* TEMPLATE SECTION */
-    .template-section {
-      padding: 5rem 3rem;
-      border-bottom: 2px solid var(--ink);
-    }
+    .template-section { padding: 5rem 3rem; border-bottom: 2px solid var(--ink); }
 
     .template-grid {
       display: grid;
@@ -521,27 +476,21 @@
       text-transform: uppercase;
     }
 
-    .template-body {
-      padding: 1.5rem;
-      background: var(--card-bg);
-    }
+    .template-body { padding: 1.5rem; background: var(--card-bg); }
+    .template-body p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); }
 
-    .template-body p {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: var(--ink);
-    }
-
-    .template-body .tamil-bit {
-      font-family: 'Noto Sans Tamil', sans-serif;
+    .dei-bit {
+      font-family: 'Syne', sans-serif;
       font-size: 1rem;
       font-weight: 700;
       display: block;
       margin-bottom: 0.5rem;
       color: var(--red);
+      text-decoration: line-through;
+      text-decoration-color: var(--red);
+      text-decoration-thickness: 3px;
     }
 
-    /* SHARE SECTION */
     .share-section {
       padding: 5rem 3rem;
       display: flex;
@@ -558,12 +507,9 @@
       letter-spacing: -0.02em;
       max-width: 500px;
     }
-
     .share-title .accent { color: var(--red); }
-
     .share-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-    /* FOOTER */
     footer {
       background: var(--ink);
       color: var(--bg);
@@ -575,21 +521,10 @@
       gap: 1rem;
     }
 
-    .footer-logo {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.9rem;
-      font-weight: 700;
-    }
+    .footer-logo { font-family: 'Space Mono', monospace; font-size: 0.9rem; font-weight: 700; }
     .footer-logo span { color: var(--red); }
+    .footer-note { font-family: 'Space Mono', monospace; font-size: 0.7rem; opacity: 0.4; letter-spacing: 0.1em; }
 
-    .footer-note {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.7rem;
-      opacity: 0.4;
-      letter-spacing: 0.1em;
-    }
-
-    /* TOAST */
     .toast {
       position: fixed;
       bottom: 2rem;
@@ -609,19 +544,16 @@
     }
     .toast.show { transform: translateX(-50%) translateY(0); }
 
-    /* Animations */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(30px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
     .hero-left > * { animation: fadeInUp 0.6s ease both; }
-    .eyebrow         { animation-delay: 0.1s; }
-    .hero-title      { animation-delay: 0.25s; }
-    .hero-subtitle   { animation-delay: 0.4s; }
-    .hero-cta        { animation-delay: 0.55s; }
+    .eyebrow        { animation-delay: 0.1s; }
+    .hero-title     { animation-delay: 0.25s; }
+    .hero-subtitle  { animation-delay: 0.4s; }
+    .hero-cta       { animation-delay: 0.55s; }
 
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 1rem 1.5rem; }
       .hero { grid-template-columns: 1fr; }
@@ -646,7 +578,6 @@
   <a href="#why" class="nav-link">Why?</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <div class="eyebrow">A message to Tamil texters</div>
@@ -698,13 +629,11 @@
   </div>
 </section>
 
-<!-- THE RULE -->
 <section class="rule-section" id="rule">
   <div class="section-header">
     <span class="section-num">01</span>
     <h2 class="section-title">The <em>Rule</em></h2>
   </div>
-
   <div class="rule-card">
     <h3>Just. Ask. The. Question.</h3>
     <p>
@@ -746,7 +675,6 @@
   </div>
 </section>
 
-<!-- WHY -->
 <section class="why-section" id="why">
   <div class="section-header">
     <span class="section-num">02</span>
@@ -771,7 +699,6 @@
   </div>
 </section>
 
-<!-- TEMPLATES -->
 <section class="template-section">
   <div class="section-header">
     <span class="section-num">03</span>
@@ -780,54 +707,52 @@
   <p style="max-width:600px; line-height:1.7; color:var(--muted);">
     You can absolutely still use "Dei" — just don't stop there. Here are some good templates:
   </p>
-
   <div class="template-grid">
     <div class="template-card">
       <div class="template-tag">Asking for help</div>
       <div class="template-body">
-        <span class="tamil-bit" style="font-family:'Syne', sans-serif; text-decoration:line-through; text-decoration-color:#e63329; text-decoration-thickness:3px;">Dei,</span>
+        <span class="dei-bit">Dei,</span>
         <p>nee free ah irundha oru doubt iruku. [problem description]. Nee help panna mudiyuma?</p>
       </div>
     </div>
     <div class="template-card">
       <div class="template-tag">Sending something</div>
       <div class="template-body">
-        <span class="tamil-bit" style="font-family:'Syne', sans-serif; text-decoration:line-through; text-decoration-color:#e63329; text-decoration-thickness:3px;">Dei,</span>
+        <span class="dei-bit">Dei,</span>
         <p>yesterday's notes file panutten, check pannu: [link/file]. Useful ah irukuma sollu.</p>
       </div>
     </div>
     <div class="template-card">
       <div class="template-tag">Making plans</div>
       <div class="template-body">
-        <span class="tamil-bit" style="font-family:'Syne', sans-serif; text-decoration:line-through; text-decoration-color:#e63329; text-decoration-thickness:3px;">Dei,</span>
+        <span class="dei-bit">Dei,</span>
         <p>Saturday 6pm la Marina ke varuviya? Dinner + beach walk plan iruku. Let me know!</p>
       </div>
     </div>
     <div class="template-card">
       <div class="template-tag">Quick question</div>
       <div class="template-body">
-        <span class="tamil-bit" style="font-family:'Syne', sans-serif; text-decoration:line-through; text-decoration-color:#e63329; text-decoration-thickness:3px;">Dei,</span>
+        <span class="dei-bit">Dei,</span>
         <p>exam date confirm ah? Naan 15th nu ketten but others 17th solaanga — which one is correct?</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SHARE -->
 <section class="share-section">
   <div class="share-title">
     Got a friend who texts just <span class="accent">"Dei"</span>?<br>Send them this.
   </div>
   <div class="share-actions">
     <button class="btn-primary" onclick="copyLink()">📋 Copy link</button>
-    <a class="btn-ghost" href="https://wa.me/?text=Dei%2C%20read%20this%3A%20https%3A%2F%2Fnodei.in" target="_blank">Share on WhatsApp</a>
+    <a class="btn-ghost" href="https://wa.me/?text=Dei%2C%20read%20this%3A%20https%3A%2F%2Fno-dei.vercel.app" target="_blank">Share on WhatsApp</a>
   </div>
 </section>
 
 <footer>
   <div class="footer-logo">no<span>dei</span></div>
   <div class="footer-note">Inspired by nohello.net</div>
-  <div class="footer-note">made with ❤️ and hate (for my dei friend) by "𝐁𝐇𝐀𝐓𝐇𝚰𝐊𝐀𝐏𝐀𝐓𝐓𝐀 𝐍𝐀𝐍𝐁𝐀𝐑"</div>
+  <div class="footer-note">made with ❤️ and hate (for my dei friend) by "𝐁𝐇𝐀𝐓𝐇𝐈𝐊𝐀𝐏𝐀𝐓𝐓𝐀 𝐍𝐀𝐍𝐁𝐀𝐑"</div>
 </footer>
 
 <script>
